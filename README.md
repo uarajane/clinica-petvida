@@ -68,21 +68,6 @@ O menu superior permite acessar as diferentes áreas do sistema de forma rápida
 * Git
 * GitHub
 
-## Estrutura do projeto
-
-petvida-clinica/
-│
-├── index.html
-│
-├── css/
-│   └── styles.css
-│
-├── README.md
-│
-├── LICENSE
-│
-└── .gitignore
-
 ## Protótipo
 
 O sistema possui cinco áreas principais:
