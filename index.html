@@ -1,1 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVida - Clínica Veterinária</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+
+            <div>
+                <h1>PetVida</h1>
+                <p>Clínica Veterinária e Estética Animal</p>
+            </div>
+
+            <nav>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#tutores">Tutores</a>
+                <a href="#pets">Pets</a>
+                <a href="#historico">Histórico</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="dashboard">
+
+            <h2>Dashboard</h2>
+
+            <p class="descricao">
+                Confira os atendimentos e a rotina da PetVida.
+            </p>
+
+            <div class="resumo">
+
+                <div class="card">
+                    <h3>Consultas hoje</h3>
+                    <p>8</p>
+                </div>
+
+                <div class="card">
+                    <h3>Banhos e tosas</h3>
+                    <p>12</p>
+                </div>
+
+                <div class="card">
+                    <h3>Vacinações</h3>
+                    <p>4</p>
+                </div>
+
+                <div class="card">
+                    <h3>Horários disponíveis</h3>
+                    <p>6</p>
+                </div>
+
+            </div>
+
+            <div class="caixa">
+
+                <h2>Próximos atendimentos</h2>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        09:00
+                    </div>
+
+                    <div>
+                        <h3>Mel</h3>
+                        <p>Consulta veterinária</p>
+                        <p>Dra. Camila Paes</p>
+                    </div>
+
+                    <span class="status confirmado">Confirmado</span>
+
+                </div>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        10:00
+                    </div>
+
+                    <div>
+                        <h3>Nina</h3>
+                        <p>Banho e tosa</p>
+                        <p>João - Tosador</p>
+                    </div>
+
+                    <span class="status confirmado">Confirmado</span>
+
+                </div>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        11:30
+                    </div>
+
+                    <div>
+                        <h3>Thor</h3>
+                        <p>Vacinação</p>
+                        <p>Dr. Gabriel Santos</p>
+                    </div>
+
+                    <span class="status pendente">Pendente</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="agenda">
+
+            <h2>Agenda</h2>
+
+            <p class="descricao">
+                Controle os atendimentos e evite conflitos de horários.
+            </p>
+
+            <div class="filtro">
+
+                <label for="data">Data do atendimento</label>
+
+                <input type="date" id="data">
+
+                <button>Novo agendamento</button>
+
+            </div>
+
+            <div class="caixa">
+
+                <h2>Atendimentos do dia</h2>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        09:00
+                    </div>
+
+                    <div>
+                        <h3>Mel</h3>
+                        <p>Consulta veterinária</p>
+                        <p>Dra. Camila Paes</p>
+                    </div>
+
+                    <span class="status confirmado">Confirmado</span>
+
+                </div>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        10:00
+                    </div>
+
+                    <div>
+                        <h3>Nina</h3>
+                        <p>Banho e tosa</p>
+                        <p>João - Tosador</p>
+                    </div>
+
+                    <span class="status confirmado">Confirmado</span>
+
+                </div>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        11:30
+                    </div>
+
+                    <div>
+                        <h3>Thor</h3>
+                        <p>Vacinação</p>
+                        <p>Dr. Gabriel Santos</p>
+                    </div>
+
+                    <span class="status pendente">Pendente</span>
+
+                </div>
+
+                <div class="atendimento">
+
+                    <div class="horario">
+                        14:00
+                    </div>
+
+                    <div>
+                        <h3>Luna</h3>
+                        <p>Banho e tosa</p>
+                        <p>Marcos - Tosador</p>
+                    </div>
+
+                    <span class="status confirmado">Confirmado</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="tutores">
+
+            <h2>Tutores</h2>
+
+            <p class="descricao">
+                Consulte rapidamente os dados dos responsáveis pelos pets.
+            </p>
+
+            <div class="filtro">
+
+                <label for="busca-tutor">Buscar tutor</label>
+
+                <input
+                    type="text"
+                    id="busca-tutor"
+                    placeholder="Digite o nome do tutor">
+
+                <button>Novo tutor</button>
+
+            </div>
+
+            <div class="caixa">
+
+                <div class="tabela cabecalho-tabela">
+
+                    <strong>Nome</strong>
+                    <strong>Telefone</strong>
+                    <strong>Pet</strong>
+
+                </div>
+
+                <div class="tabela">
+
+                    <span>Maria Oliveira</span>
+                    <span>(41) 99999-9999</span>
+                    <span>Mel</span>
+
+                </div>
+
+                <div class="tabela">
+
+                    <span>João Pereira</span>
+                    <span>(41) 98888-8888</span>
+                    <span>Nina</span>
+
+                </div>
+
+                <div class="tabela">
+
+                    <span>Ana Souza</span>
+                    <span>(41) 97777-7777</span>
+                    <span>Thor</span>
+
+                </div>
+
+                <div class="tabela">
+
+                    <span>Carolina Mendes</span>
+                    <span>(41) 96666-6666</span>
+                    <span>Luna</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="pets">
+
+            <h2>Pets</h2>
+
+            <p class="descricao">
+                Consulte os animais cadastrados e seus principais atendimentos.
+            </p>
+
+            <div class="filtro">
+
+                <label for="busca-pet">Buscar pet</label>
+
+                <input
+                    type="text"
+                    id="busca-pet"
+                    placeholder="Digite o nome do pet">
+
+                <button>Novo pet</button>
+
+            </div>
+
+            <div class="pets">
+
+                <div class="pet-card">
+
+                    <h3>Mel</h3>
+
+                    <p><strong>Tutor:</strong> Maria Oliveira</p>
+
+                    <p><strong>Espécie:</strong> Cachorro</p>
+
+                    <p><strong>Última consulta:</strong> 20/09/2026</p>
+
+                    <a href="#historico">Ver histórico</a>
+
+                </div>
+
+                <div class="pet-card">
+
+                    <h3>Nina</h3>
+
+                    <p><strong>Tutor:</strong> João Pereira</p>
+
+                    <p><strong>Espécie:</strong> Cachorro</p>
+
+                    <p><strong>Último banho:</strong> 28/09/2026</p>
+
+                    <a href="#historico">Ver histórico</a>
+
+                </div>
+
+                <div class="pet-card">
+
+                    <h3>Thor</h3>
+
+                    <p><strong>Tutor:</strong> Ana Souza</p>
+
+                    <p><strong>Espécie:</strong> Cachorro</p>
+
+                    <p><strong>Última vacinação:</strong> 15/08/2026</p>
+
+                    <a href="#historico">Ver histórico</a>
+
+                </div>
+
+                <div class="pet-card">
+
+                    <h3>Luna</h3>
+
+                    <p><strong>Tutor:</strong> Carolina Mendes</p>
+
+                    <p><strong>Espécie:</strong> Gato</p>
+
+                    <p><strong>Última consulta:</strong> 25/09/2026</p>
+
+                    <a href="#historico">Ver histórico</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="historico">
+
+            <h2>Histórico</h2>
+
+            <p class="descricao">
+                Consulte os atendimentos anteriores de cada pet.
+            </p>
+
+            <div class="filtro">
+
+                <label for="busca-historico">Buscar pet</label>
+
+                <input
+                    type="text"
+                    id="busca-historico"
+                    placeholder="Digite o nome do pet">
+
+            </div>
+
+            <div class="historico">
+
+                <div class="dados-pet">
+
+                    <h3>Mel</h3>
+
+                    <p><strong>Tutor:</strong> Maria Oliveira</p>
+
+                    <p><strong>Espécie:</strong> Cachorro</p>
+
+                </div>
+
+                <h3>Atendimentos anteriores</h3>
+
+                <div class="registro">
+
+                    <div class="data">
+                        20/09/2026
+                    </div>
+
+                    <div>
+                        <h4>Consulta veterinária</h4>
+                        <p>Dra. Camila Paes</p>
+                        <p>Avaliação clínica e acompanhamento preventivo.</p>
+                    </div>
+
+                </div>
+
+                <div class="registro">
+
+                    <div class="data">
+                        15/07/2026
+                    </div>
+
+                    <div>
+                        <h4>Vacinação</h4>
+                        <p>Dr. Gabriel Santos</p>
+                        <p>Vacinação preventiva realizada.</p>
+                    </div>
+
+                </div>
+
+                <div class="registro">
+
+                    <div class="data">
+                        10/06/2026
+                    </div>
+
+                    <div>
+                        <h4>Banho e tosa</h4>
+                        <p>João - Tosador</p>
+                        <p>Serviço de estética animal realizado.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
